@@ -1,0 +1,257 @@
+/* Base */
+body {
+  color: #2e2f42;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none; /* removes `a` default underline */
+}
+
+ul {
+  list-style-type: none; /* removes `ul` default bullet markers */
+  padding: 0; /* removes `ul` default start padding */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column; /* default `row` */
+  width: 1440px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: inherit;
+}
+
+.button {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  background-color: #4d5ae5;
+  text-transform: capitalize;
+  text-align: center; /* center text alignment */
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.button:hover {
+  background-color: #404bbf;
+}
+
+/* Header */
+.header {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* center text alignment */
+  padding: 0 156px;
+}
+
+.navigation {
+  display: flex;
+  gap: 76px; /* spaces between elements */
+  align-items: center;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 40px;
+}
+
+.address ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  color: #2e2f42;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.contact-link {
+  color: #434455;
+  font-style: normal;
+}
+
+/* Logo */
+.logo-dark {
+  color: #2e2f42;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo-light {
+  color: #f4f4fd;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: #4d5ae5;
+}
+
+/* Hero section */
+/* bad children selectors naming practise: */
+.hero {
+  padding: 188px 0;
+  background-color: #2e2f42;
+}
+
+.title {
+  max-width: 496px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Advanteges section */
+/* Not good children selectors naming practise: */
+.advanteges {
+  padding: 120px 0;
+}
+
+.advanteges h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.advanteges ul {
+  display: flex;
+  gap: 24px;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.advanteges p {
+  width: 264px;
+}
+
+/* Team section */
+/* BEST children selectors naming practise: */
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px; /* bottom corners radius */
+  box-shadow: 0 1px 4px #2e2f4229;
+}
+
+.team-link {
+  color: #2e2f42;
+  text-align: center;
+}
+
+.team-link h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 32px 0 0 0;
+}
+
+.team-link p {
+  color: #434455;
+  margin: 8px 0 32px 0;
+}
+
+/* Portfolio */
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+ul.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* creates 3 same width cloumns */
+  grid-gap: 20px; /* spaces between elements */
+  margin: 0;
+}
+
+.grid-item {
+  color: #2e2f42;
+  text-align: center;
+}
+
+.grid-item img {
+  display: block; /* removes the bottom padding that sometimes appears on images. */
+}
+
+.grid-item h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 32px 0 0 0;
+  margin: 0;
+}
+
+.grid-item p {
+  color: #434455;
+  margin: 8px 0 32px 0;
+}
+
+.grid-item-border {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 100px 0 100px 156px;
+  background-color: #2e2f42;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  width: 264px;
+  letter-spacing: 0.02em;
+}
