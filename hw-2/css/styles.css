@@ -43,7 +43,8 @@ button {
   margin-top: 48px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #404bbf;
 }
 
@@ -78,9 +79,19 @@ button {
   letter-spacing: 0.02em;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
 .contact-link {
   color: #434455;
   font-style: normal;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
 }
 
 /* Logo */
@@ -171,15 +182,14 @@ button {
   gap: 24px;
 }
 
-.team-card {
+.team-link {
+  display: block;
+  color: #2e2f42;
+  text-align: center;
   background-color: #fff;
   border-radius: 0 0 4px 4px; /* bottom corners radius */
   box-shadow: 0 1px 4px #2e2f4229;
-}
-
-.team-link {
-  color: #2e2f42;
-  text-align: center;
+  padding-bottom: 32px;
 }
 
 .team-link h3 {
@@ -191,7 +201,7 @@ button {
 
 .team-link p {
   color: #434455;
-  margin: 8px 0 32px 0;
+  margin-top: 8px;
 }
 
 /* Portfolio */
@@ -229,6 +239,7 @@ ul.portfolio-grid {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  text-transform: capitalize;
   padding: 32px 0 0 0;
   margin: 0;
 }
